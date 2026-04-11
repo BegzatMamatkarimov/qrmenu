@@ -3,9 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import { Hero } from './Hero';
 
 describe('Hero', () => {
-  it('renders Fish Resort title and description', () => {
+  it('renders Menu title and description', () => {
     render(<Hero searchQuery="" onSearchChange={() => {}} />);
-    expect(screen.getByText('Fish Resort')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Menu' })).toBeInTheDocument();
     expect(screen.getByText(/Ресторан на свежем воздухе/)).toBeInTheDocument();
   });
 

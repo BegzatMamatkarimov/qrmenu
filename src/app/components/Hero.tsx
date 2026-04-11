@@ -23,12 +23,12 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
           <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg">
             <Waves className="text-[#475569] w-6 h-6" />
           </div>
-          <span className="font-serif text-white font-bold tracking-widest text-xs uppercase">
-            Premium Resort
+          <span className="font-serif text-white/95 font-bold tracking-wide text-xs uppercase bg-white/20 px-3 py-1 rounded-full border border-white/40 backdrop-blur-sm">
+            Fish Resort Karnak
           </span>
         </div>
         <h1 className="font-serif text-4xl text-white font-black leading-tight drop-shadow-md">
-          Fish Resort
+          Menu
         </h1>
         <p className="font-sans text-white/90 text-sm max-w-[280px] drop-shadow-sm">
           Ресторан на свежем воздухе у речки. Ловите рыбу, готовьте её на гриле и наслаждайтесь свежайшим вкусом прямо у воды.

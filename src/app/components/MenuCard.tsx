@@ -38,9 +38,11 @@ export function MenuCard({
             <h3 className="font-serif text-slate-800 text-lg leading-tight font-semibold">
               {name}
             </h3>
-            <span className="font-sans text-[#475569] font-bold whitespace-nowrap">
-              {price} ₸
-            </span>
+            {price > 0 && (
+              <span className="font-sans text-[#475569] font-bold whitespace-nowrap">
+                {price} ₸
+              </span>
+            )}
           </div>
           <p className="text-slate-600 text-xs line-clamp-1 mt-1 font-sans italic">
             {description}

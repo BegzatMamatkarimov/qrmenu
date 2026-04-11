@@ -9,59 +9,84 @@ const MENU_DATA = {
   salads: {
     label: 'Салаты',
     items: [
-      { name: 'Ачучук', price: 1200, description: 'Традиционный узбекский салат из помидоров и лука', ingredients: 'Помидоры, лук, острый перец, базилик', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwZnJlc2glMjBzYWxhZCUyMGJvd2x8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Свежий', price: 1300, description: 'Легкий витаминный салат', ingredients: 'Огурцы, помидоры, зелень, масло/сметана', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwZnJlc2glMjBzYWxhZCUyMGJvd2x8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Цезарь', price: 1600, description: 'Классический салат с курицей и соусом', ingredients: 'Листья салата, курица, сухарики, пармезан, соус цезарь', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwZnJlc2glMjBzYWxhZCUyMGJvd2x8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Соевый салат', price: 1600, description: 'Пикантный азиатский салат', ingredients: 'Ростки сои, морковь, чеснок, специи, соевый соус', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwZnJlc2glMjBzYWxhZCUyMGJvd2x8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Крабовый салат', price: 1800, description: 'Сытный классический салат', ingredients: 'Крабовые палочки, кукуруза, рис, яйца, майонез', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcmVtaXVtJTIwZnJlc2glMjBzYWxhZCUyMGJvd2x8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-    ]
-  },
-  shashlyk: {
-    label: 'Шашлык',
-    items: [
-      { name: 'Кускавой', price: 550, description: 'Сочное мясо кусочками на углях', ingredients: 'Говядина/баранина, специи, маринад', image: 'https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGlzaCUyMGtlYmFiJTIwbWVhdCUyMHNrZXdlcnMlMjBsdXh1cnl8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Фарш', price: 550, description: 'Нежный люля-кебаб', ingredients: 'Молотое мясо, лук, курдюк, специи', image: 'https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGlzaCUyMGtlYmFiJTIwbWVhdCUyMHNrZXdlcnMlMjBsdXh1cnl8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Крылышки', price: 550, description: 'Хрустящие куриные крылышки', ingredients: 'Куриные крылья, маринад, специи', image: 'https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGlzaCUyMGtlYmFiJTIwbWVhdCUyMHNrZXdlcnMlMjBsdXh1cnl8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Ребрышки (баранина)', price: 650, description: 'Ароматные ребрышки на костре', ingredients: 'Бараньи ребрышки, кавказские травы, соль', image: 'https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGlzaCUyMGtlYmFiJTIwbWVhdCUyMHNrZXdlcnMlMjBsdXh1cnl8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
+      { name: 'Ачучук', price: 1300, description: 'Свежий овощной салат', ingredients: 'Помидоры, лук, зелень', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Свежий салат', price: 1300, description: 'Классический свежий салат', ingredients: 'Огурцы, помидоры, зелень', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Цезарь', price: 1800, description: 'Сытный салат с курицей', ingredients: 'Пекинская капуста, куриное филе, корнишоны, сыр, помидоры, майонез, яйцо', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Свежий салат с соевым соусом', price: 1800, description: 'Овощной салат с насыщенным вкусом', ingredients: 'Огурцы, помидоры, мясо, соленые огурцы, болгарский перец, морковь, соевый соус, лук', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Мужской каприз', price: 1800, description: 'Плотный мясной салат', ingredients: 'Картофель, морковь, соленые огурцы, колбаса, сыр, кукуруза, курица, майонез', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Хрустящий баклажан', price: 1800, description: 'Баклажан с ярким соусом', ingredients: 'Баклажан, помидоры, соус райди, фунчоза', image: 'https://images.unsplash.com/photo-1761315600943-d8a5bb0c499f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
     ]
   },
   main: {
     label: 'Горячие блюда',
     items: [
-      { name: 'Суп', price: 900, description: 'Насыщенный домашний суп', ingredients: 'Мясо, картофель, морковь, лук, зелень', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmllbnRhbCUyMHBpbGFmJTIwcGxvdiUyMGRpc2h8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Плов', price: 1200, weight: 'порция', description: 'Традиционный восточный плов', ingredients: 'Рис лазер, мясо, морковь, нут, изюм', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmllbnRhbCUyMHBpbGFmJTIwcGxvdiUyMGRpc2h8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Лагман', price: 1300, description: 'Тянутая вручную лапша с подливом', ingredients: 'Лапша, мясо, овощи, специи', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmllbnRhbCUyMHBpbGFmJTIwcGxvdiUyMGRpc2h8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Гуйру лагман', price: 1300, description: 'Лагман с обжаренным мясом и овощами', ingredients: 'Лапша, мясо, перец, сельдерей, специи', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmllbnRhbCUyMHBpbGFmJTIwcGxvdiUyMGRpc2h8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Манты', price: 1300, description: 'Мясные манты на пару', ingredients: 'Тесто, фарш (мясо, лук), специи', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmllbnRhbCUyMHBpbGFmJTIwcGxvdiUyMGRpc2h8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Казан кабаб', price: 1500, description: 'Жареное мясо с картофелем в казане', ingredients: 'Мясо, картофель, лук, специи', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmllbnRhbCUyMHBpbGFmJTIwcGxvdiUyMGRpc2h8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Жаренная рыба (сазан)', price: 1800, weight: '250гр', description: 'Свежепойманный сазан, обжаренный до корочки', ingredients: 'Рыба сазан, панировка, лимон, зелень', image: 'https://images.unsplash.com/photo-1761950190821-970680100a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwd2hvbGUlMjBmaXNoJTIwb3V0ZG9vciUyMGZpcmV8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Форель на углях', price: 2200, weight: '250гр', description: 'Нежная форель с дымком', ingredients: 'Форель, маринад, лимон, травы', image: 'https://images.unsplash.com/photo-1761950190821-970680100a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwd2hvbGUlMjBmaXNoJTIwb3V0ZG9vciUyMGZpcmV8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Казан кебаб', price: 1500, weight: 'порция', description: 'Мясо томленое с овощами', ingredients: 'Мясо, лук, специи, овощи', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmllbnRhbCUyMHBpbGFmJTIwcGxvdiUyMGRpc2h8ZW58MXx8fHwxNzcxMDc0NzU4fDA&ixlib=rb-4.1.0&q=80&w=1080' },
+      { name: 'Сорпа', price: 1000, description: 'Наваристый суп', ingredients: 'Бульон, мясо, овощи', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Пельмени', price: 1100, description: 'Домашние пельмени', ingredients: 'Тесто, мясная начинка, специи', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Плов', price: 0, description: 'На заказ от 6 порций', ingredients: 'На заказ', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Казан-кебаб', price: 0, description: 'На заказ от 6 порций', ingredients: 'На заказ', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Бешбармак', price: 0, description: 'На заказ от 6 порций', ingredients: 'На заказ', image: 'https://images.unsplash.com/photo-1735233024815-7986206a18a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
     ]
   },
-  drinks: {
-    label: 'Напитки',
+  fish: {
+    label: 'Рыба',
     items: [
-      { name: 'Coca Cola', price: 600, description: 'Газировка, классическая', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Pepsi', price: 600, description: 'Освежающий напиток', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Fanta', price: 600, description: 'Апельсиновая свежесть', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Sprite', price: 600, description: 'Лимон-лайм свежесть', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Сарыагаш', price: 350, description: 'Минеральная вода', ingredients: 'Охлажденная минеральная вода', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Dizzy', price: 550, description: 'Энергетический напиток', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Gorilla', price: 600, description: 'Энергетический напиток', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Фьюс чай', price: 500, description: 'Холодный чай', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Piko pulpi', price: 750, description: 'Сок с мякотью', ingredients: 'Натуральный сок', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Piko tetra', price: 700, description: 'Сок в упаковке', ingredients: 'Натуральный сок', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Мохито', price: 1400, description: 'Освежающий безалкогольный коктейль', ingredients: 'Лайм, мята, лед, спрайт, сироп', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Домашний лимонад', price: 1400, description: 'Фирменный лимонад от шефа', ingredients: 'Натуральные цитрусовые, лед, секретный ингредиент', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnbGFzcyUyMG9mJTIwY29sYSUyMGljZSUyMGxlbW9ufGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
+      { name: 'Форель (сырая)', price: 4000, weight: 'кг', description: 'Свежая форель', ingredients: 'Форель', image: 'https://images.unsplash.com/photo-1761950190821-970680100a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Форель (жареная)', price: 6000, weight: 'кг', description: 'Жареная форель', ingredients: 'Форель', image: 'https://images.unsplash.com/photo-1761950190821-970680100a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Форель (стейк)', price: 6000, weight: 'кг', description: 'Форель в формате стейка', ingredients: 'Форель', image: 'https://images.unsplash.com/photo-1761950190821-970680100a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Форель (шашлык)', price: 6000, weight: 'кг', description: 'Форель на шампуре', ingredients: 'Форель', image: 'https://images.unsplash.com/photo-1761950190821-970680100a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Сазан (жареный)', price: 6000, weight: 'кг', description: 'Жареный сазан', ingredients: 'Сазан', image: 'https://images.unsplash.com/photo-1761950190821-970680100a22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+    ]
+  },
+  shashlyk: {
+    label: 'Шашлыки',
+    items: [
+      { name: 'Кусковой', price: 780, description: 'Мясо кусочками на углях', ingredients: 'Мясо, маринад, специи', image: 'https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Фарш (люля)', price: 720, description: 'Сочный люля-кебаб', ingredients: 'Фарш, лук, специи', image: 'https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Утка', price: 700, description: 'Нежная утка, приготовленная на углях', ingredients: 'Утка, фирменный маринад, специи', image: 'https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+    ]
+  },
+  steaks: {
+    label: 'Стейки',
+    items: [
+      { name: 'T-bone стейк', price: 4500, weight: '500 г', description: 'Сочный стейк премиум-класса', ingredients: 'Говядина', image: 'https://images.unsplash.com/photo-1544025162-d76694265947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+    ]
+  },
+  snacks: {
+    label: 'Снеки',
+    items: [
+      { name: 'Картофель фри', price: 700, weight: '200 г', description: 'Хрустящий картофель фри', ingredients: 'Картофель, соль, масло', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Крылышки и чипсы', price: 0, description: 'Цена уточняется', ingredients: 'Крылышки, чипсы', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Курт', price: 150, weight: '1 шт', description: 'Традиционная закуска', ingredients: 'Курт', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Чичель', price: 0, description: 'Цена уточняется', ingredients: 'Чичель', image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
     ]
   },
   hot_drinks: {
     label: 'Горячие напитки',
     items: [
-      { name: 'Черный чай', price: 350, description: 'Классический черный чай', ingredients: 'Крупнолистовой чай', image: 'https://images.unsplash.com/photo-1600271701041-340850ff3bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGhvdCUyMHRlYSUyMGdsYXNzfGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Зеленый чай', price: 350, description: 'Освежающий зеленый чай', ingredients: 'Зеленый листовой чай', image: 'https://images.unsplash.com/photo-1600271701041-340850ff3bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGhvdCUyMHRlYSUyMGdsYXNzfGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
-      { name: 'Ташкентский чай', price: 600, description: 'Легендарный ароматный чай', ingredients: 'Чай, лимон, мята, нават', image: 'https://images.unsplash.com/photo-1600271701041-340850ff3bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkaXRpb25hbCUyMGhvdCUyMHRlYSUyMGdsYXNzfGVufDF8fHx8MTc3MTA3NDc1OHww&ixlib=rb-4.1.0&q=80&w=1080' },
+      { name: 'Чёрный чай', price: 350, weight: 'чайник', description: 'Классический чёрный чай', ingredients: 'Чай', image: 'https://images.unsplash.com/photo-1600271701041-340850ff3bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Зелёный чай', price: 350, weight: 'чайник', description: 'Классический зелёный чай', ingredients: 'Чай', image: 'https://images.unsplash.com/photo-1600271701041-340850ff3bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Ташкентский чай', price: 700, weight: 'чайник', description: 'Ароматный ташкентский чай', ingredients: 'Чай, лимон, мята', image: 'https://images.unsplash.com/photo-1600271701041-340850ff3bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Ташкентский чай (большой чайник)', price: 1200, description: 'Большой чайник ташкентского чая', ingredients: 'Чай, лимон, мята', image: 'https://images.unsplash.com/photo-1600271701041-340850ff3bbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+    ]
+  },
+  drinks: {
+    label: 'Напитки',
+    items: [
+      { name: 'Coca-Cola', price: 800, weight: '1 л', description: 'Газированный напиток', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Pepsi', price: 800, weight: '1 л', description: 'Газированный напиток', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Maxi чай', price: 800, weight: '1.2 л', description: 'Холодный чай', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Fish чай', price: 600, weight: '1 л', description: 'Фирменный чай', ingredients: 'Охлажденный напиток', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Chortoq', price: 700, description: 'Минеральная вода', ingredients: 'Вода', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Borjomi', price: 800, description: 'Минеральная вода', ingredients: 'Вода', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Piko (Tetra Pak)', price: 800, description: 'Сок в упаковке', ingredients: 'Фруктовый сок', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Сарыагаш', price: 400, weight: '1.5 л', description: 'Минеральная вода', ingredients: 'Вода', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+      { name: 'Вода без газа', price: 250, weight: '0.5 л', description: 'Питьевая вода', ingredients: 'Вода', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
+    ]
+  },
+  homemade_drinks: {
+    label: 'Домашние напитки',
+    items: [
+      { name: 'Мохито', price: 2000, description: 'Освежающий домашний напиток', ingredients: 'Лайм, мята, лед, сироп', image: 'https://images.unsplash.com/photo-1658846585855-9ceb669bbf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080' },
     ]
   }
 };
@@ -179,7 +204,7 @@ export default function App() {
         <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
           <Bell className="text-[#475569] w-6 h-6" />
         </div>
-        <p className="font-serif text-white font-bold text-2xl italic mb-1">Fish Resort</p>
+        <p className="font-serif text-white font-bold text-2xl italic mb-1">Fish Resort Karnak</p>
         <p className="text-white/70 text-[10px] uppercase tracking-[0.2em]">Luxury Nature Experience</p>
       </footer>
 

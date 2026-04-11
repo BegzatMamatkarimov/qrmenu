@@ -3,9 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
 describe('App', () => {
-  it('renders Fish Resort and menu content', () => {
+  it('renders Menu and menu content', () => {
     render(<App />);
-    expect(screen.getByRole('heading', { name: 'Fish Resort' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Menu' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: 'Салаты' })).toBeInTheDocument();
     expect(screen.getByText('Ачучук')).toBeInTheDocument();
   });
@@ -27,6 +27,6 @@ describe('App', () => {
   it('shows drinks when category Напитки is clicked', () => {
     render(<App />);
     fireEvent.click(screen.getByRole('button', { name: 'Напитки' }));
-    expect(screen.getByText('Coca Cola')).toBeInTheDocument();
+    expect(screen.getByText('Coca-Cola')).toBeInTheDocument();
   });
 });
