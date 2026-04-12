@@ -9,7 +9,7 @@ const MENU_DATA = {
   salads: {
     label: 'Салаты',
     items: [
-      { name: 'Ачучук', price: 1300, description: 'Свежий овощной салат', ingredients: 'Помидоры, лук, зелень', image: 'Узбекский салат «Ачичук».jpg' },
+      { name: 'Ачучук', price: 1300, description: 'Свежий овощной салат', ingredients: 'Помидоры, лук, зелень', image: 'Ачучук.jpg' },
       { name: 'Свежий салат', price: 1300, description: 'Классический свежий салат', ingredients: 'Огурцы, помидоры, зелень', image: 'qweqwe.jpg' },
       { name: 'Цезарь', price: 1800, description: 'Сытный салат с курицей', ingredients: 'Пекинская капуста, куриное филе, корнишоны, сыр, помидоры, майонез, яйцо', image: 'Цезарь.jpg' },
       { name: 'Свежий салат с соевым соусом', price: 1800, description: 'Овощной салат с насыщенным вкусом', ingredients: 'Огурцы, помидоры, мясо, соленые огурцы, болгарский перец, морковь, соевый соус, лук', image: 'sddefault.jpg' },
@@ -34,7 +34,7 @@ const MENU_DATA = {
       { name: 'Форель (жареная)', price: 6000, weight: 'кг', description: 'Жареная форель', ingredients: 'Форель', image: '07a4695289_1000.jpg' },
       { name: 'Форель (стейк)', price: 6000, weight: 'кг', description: 'Форель в формате стейка', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.12.jpeg' },
       { name: 'Форель (шашлык)', price: 6000, weight: 'кг', description: 'Форель на шампуре', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.11.jpeg' },
-      { name: 'Сазан (жареный)', price: 6000, weight: 'кг', description: 'Жареный сазан', ingredients: 'Сазан', image: 'Сазан-жаренный.jpg' },
+      { name: 'Сазан (жареный)', price: 6000, weight: 'кг', description: 'Жареный сазан', ingredients: 'Сазан', image: 'Сазан.jpg' },
     ]
   },
   shashlyk: {
