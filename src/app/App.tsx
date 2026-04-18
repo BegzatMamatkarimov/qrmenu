@@ -30,7 +30,7 @@ const MENU_DATA = {
   fish: {
     label: 'Рыба',
     items: [
-      { name: 'Форель (сырая)', price: 4000, weight: 'кг', description: 'Свежая форель', ingredients: 'Форель', image: '1319013-photo-big.jpg' },
+      { name: 'Форель (сырая)', price: 4500, weight: 'кг', description: 'Свежая форель', ingredients: 'Форель', image: '1319013-photo-big.jpg' },
       { name: 'Форель (жареная)', price: 6000, weight: 'кг', description: 'Жареная форель', ingredients: 'Форель', image: '07a4695289_1000.jpg' },
       { name: 'Форель (стейк)', price: 6000, weight: 'кг', description: 'Форель в формате стейка', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.12.jpeg' },
       { name: 'Форель (шашлык)', price: 6000, weight: 'кг', description: 'Форель на шампуре', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.11.jpeg' },
@@ -55,16 +55,16 @@ const MENU_DATA = {
     label: 'Снеки',
     items: [
       { name: 'Картофель фри', price: 700, weight: '200 г', description: 'Хрустящий картофель фри', ingredients: 'Картофель, соль, масло', image: 'kartofel-fry.jpg' },
-      { name: 'Крылышки и чипсы', price: 0, description: 'Цена уточняется', ingredients: 'Крылышки, чипсы', image: '73842s3.jpg' },
+      { name: 'Кириешки и чипсы', price: 0, description: 'Цена уточняется', ingredients: 'Крылышки, чипсы', image: '215945_or.jpg' },
       { name: 'Курт', price: 150, weight: '1 шт', description: 'Традиционная закуска', ingredients: 'Курт', image: '60f55679-7a25-4743-85b9-5fbadb3c2b24.webp' },
-      { name: 'Чечель', price: 0, description: 'Цена уточняется', ingredients: 'Чечель', image: 'cheezu-chechil.jpg.webp' },
+      { name: 'Чечель', price: 700,weight: '1 пачка', description: '1 пачка', ingredients: 'Чечель', image: 'cheezu-chechil.jpg.webp' },
     ]
   },
   hot_drinks: {
     label: 'Горячие напитки',
     items: [
-      { name: 'Чёрный чай', price: 350, weight: 'чайник', description: 'Классический чёрный чай', ingredients: 'Чай', image: 'images.jpeg' },
-      { name: 'Зелёный чай', price: 350, weight: 'чайник', description: 'Классический зелёный чай', ingredients: 'Чай', image: 'images2.jpeg' },
+      { name: 'Чёрный чай', price: 450, weight: 'чайник', description: 'Классический чёрный чай', ingredients: 'Чай', image: 'images.jpeg' },
+      { name: 'Зелёный чай', price: 450, weight: 'чайник', description: 'Классический зелёный чай', ingredients: 'Чай', image: 'images2.jpeg' },
       { name: 'Ташкентский чай', price: 700, weight: 'чайник', description: 'Ароматный ташкентский чай', ingredients: 'Чай, лимон, мята', image: 'tashketskiy-chai.jpg' },
       { name: 'Ташкентский чай (большой чайник)', price: 1200, description: 'Большой чайник ташкентского чая', ingredients: 'Чай, лимон, мята', image: 'tashketskiy-chai.jpg' },
     ]
@@ -74,12 +74,16 @@ const MENU_DATA = {
     items: [
       { name: 'Coca-Cola', price: 800, weight: '1 л', description: 'Газированный напиток', ingredients: 'Охлажденный напиток', image: '05946053681acf7401f6e79ef83e617c.jpg' },
       { name: 'Pepsi', price: 800, weight: '1 л', description: 'Газированный напиток', ingredients: 'Охлажденный напиток', image: 'pepsi2-500x500.jpg' },
+      { name: 'Pepsi', price: 1200, weight: '2 л', description: 'Газированный напиток', ingredients: 'Охлажденный напиток', image: 'pepsi2-500x500.jpg' },
       { name: 'Maxi чай', price: 800, weight: '1.2 л', description: 'Холодный чай', ingredients: 'Охлажденный напиток', image: 'i.webp' },
-      { name: 'Fish чай', price: 600, weight: '1 л', description: 'Фирменный чай', ingredients: 'Охлажденный напиток', image: '0b7a2243-redakt1-600x600.jpg' },
+      { name: 'Maxi чай', price: 1200, weight: '2 л', description: 'Холодный чай', ingredients: 'Охлажденный напиток', image: 'i.webp' },
+      { name: 'Fuse чай', price: 600, weight: '1 л', description: 'Фирменный чай', ingredients: 'Охлажденный напиток', image: 'fusetea-mango-pineapple_d.jpg.webp' },
+      { name: 'Gorilla', price: 650, weight: '0.5 л', description: 'Энергетический напиток', ingredients: 'Охлажденный напиток', image: '224713-napitok_energeticheskii_gorilla_zh_b_450_ml.webp' },
+      { name: 'DIZZY', price: 650, weight: '0.33 л', description: 'Энергетический напиток', ingredients: 'Охлажденный напиток', image: '3454babfd000032e9be0225822ad758b.jpg' },
       { name: 'Chortoq', price: 700, description: 'Минеральная вода', ingredients: 'Вода', image: '1l.jpg' },
-      { name: 'Borjomi', price: 800, description: 'Минеральная вода', ingredients: 'Вода', image: '3f2d7d9948b7f07a9760cb2d64b71c76.jpg' },
+      { name: 'Borjomi', price: 900, description: 'Минеральная вода', ingredients: 'Вода', image: '3f2d7d9948b7f07a9760cb2d64b71c76.jpg' },
       { name: 'Piko (Tetra Pak)', price: 800, description: 'Сок в упаковке', ingredients: 'Фруктовый сок', image: 'piko-tetra.png.webp' },
-      { name: 'Сарыагаш', price: 400, weight: '1.5 л', description: 'Минеральная вода', ingredients: 'Вода', image: 'Минеральная_вода_Сарыагаш__1_5_л.jpg' },
+      { name: 'Сарыагаш', price: 600, weight: '1.5 л', description: 'Минеральная вода', ingredients: 'Вода', image: 'Минеральная_вода_Сарыагаш__1_5_л.jpg' },
       { name: 'Вода без газа', price: 250, weight: '0.5 л', description: 'Питьевая вода', ingredients: 'Вода', image: '686542bbd50b8cecdf904ce3.avif' },
     ]
   },

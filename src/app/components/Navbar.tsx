@@ -46,6 +46,11 @@ export function Navbar({ categories, activeCategory, onCategoryChange }: NavbarP
           ))}
         </div>
       </div>
+      <div className="mt-3 px-4">
+        <div className="mx-auto w-fit rounded-full border border-amber-200/50 bg-amber-100/95 text-amber-900 px-4 py-1.5 text-xs sm:text-sm font-bold shadow-lg backdrop-blur-sm">
+          Обслуживание 10%
+        </div>
+      </div>
     </div>
   );
 }
