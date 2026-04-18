@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 
 interface NavbarProps {
@@ -9,6 +9,7 @@ interface NavbarProps {
 
 export function Navbar({ categories, activeCategory, onCategoryChange }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const categoryButtonRefs = useRef<Record<string, HTMLButtonElement | null>>({});
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,17 @@ export function Navbar({ categories, activeCategory, onCategoryChange }: NavbarP
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const activeButton = categoryButtonRefs.current[activeCategory];
+    if (activeButton && typeof activeButton.scrollIntoView === 'function') {
+      activeButton.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest',
+      });
+    }
+  }, [activeCategory]);
 
   return (
     <div
@@ -29,6 +41,9 @@ export function Navbar({ categories, activeCategory, onCategoryChange }: NavbarP
           {categories.map((cat) => (
             <button
               key={cat.id}
+              ref={(el) => {
+                categoryButtonRefs.current[cat.id] = el;
+              }}
               onClick={() => onCategoryChange(cat.id)}
               className={`whitespace-nowrap px-4 py-2 rounded-full text-sm font-sans font-medium transition-all duration-300 relative ${
                 activeCategory === cat.id ? 'text-[#475569]' : 'text-white bg-white/20 backdrop-blur-sm hover:bg-white/30'
