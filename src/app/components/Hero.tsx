@@ -11,7 +11,7 @@ export function Hero({ searchQuery, onSearchChange }: HeroProps) {
     <div className="relative h-[40vh] w-full flex flex-col justify-end px-6 pb-12">
       <div className="absolute inset-0 z-0 overflow-hidden">
         <ImageWithFallback
-          src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/503744317.jpg?k=16496e1e995b4981026cd00180aa0d83480bc81c84b32374444ecb29794dc055&o="
+          src="/hero-real-1.png"
           alt="Fish Resort"
           className="w-full h-full object-cover"
         />
