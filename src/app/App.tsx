@@ -31,10 +31,10 @@ const MENU_DATA = {
     label: 'Рыба',
     items: [
       { name: 'Форель (сырая)', price: 4500, weight: 'кг', description: 'Свежая форель', ingredients: 'Форель', image: '1319013-photo-big.jpg' },
-      { name: 'Форель (жареная)', price: 6000, weight: 'кг', description: 'Жареная форель', ingredients: 'Форель', image: '07a4695289_1000.jpg' },
-      { name: 'Форель (стейк)', price: 6000, weight: 'кг', description: 'Форель в формате стейка', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.12.jpeg' },
-      { name: 'Форель (шашлык)', price: 6000, weight: 'кг', description: 'Форель на шампуре', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.11.jpeg' },
-      { name: 'Сазан (жареный)', price: 6000, weight: 'кг', description: 'Жареный сазан', ingredients: 'Сазан', image: 'Сазан.jpg' },
+      { name: 'Форель (жареная)', price: 6500, weight: 'кг', description: 'Жареная форель', ingredients: 'Форель', image: '07a4695289_1000.jpg' },
+      { name: 'Форель (стейк)', price: 6500, weight: 'кг', description: 'Форель в формате стейка', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.12.jpeg' },
+      { name: 'Форель (шашлык)', price: 6500, weight: 'кг', description: 'Форель на шампуре', ingredients: 'Форель', image: 'WhatsApp Image 2026-04-09 at 22.57.11.jpeg' },
+      { name: 'Сазан (жареный)', price: 6500, weight: 'кг', description: 'Жареный сазан', ingredients: 'Сазан', image: 'Сазан.jpg' },
     ]
   },
   shashlyk: {
